@@ -14,10 +14,10 @@
     "image": "images/project2.jpg"
   },
   {
-    "title": "Website Portfolio",
-    "description": "A website built with HTML and CSS to showcase my projects.",
-    "technologies": "HTML, CSS",
-    "link": "https://github.com/lc22-0929/portfolio-susannaanand.git",
-    "image": "images/project1.jpg"
-  },
+        "title": "Website Portfolio",
+        "description": "A website built with HTML and CSS to showcase my projects.",
+        "technologies": "HTML, CSS",
+        "link": "https://github.com/lc22-0929/portfolio-susannaanand.git",
+        "image": "images/website.jpeg"
+  }
 ]
