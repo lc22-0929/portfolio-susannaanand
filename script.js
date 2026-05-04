@@ -22,4 +22,24 @@ contactForm.addEventListener('submit', function(event) {
     }
 });
 
-  
+const projectsContainer = document.getElementById('projects-container');
+
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(project => {
+            const projectCard = document.createElement('div');
+            projectCard.classList.add('project-card');
+
+            projectCard.innerHTML = `
+                <img src="${project.image}" alt="${project.title} image" class="project-image">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <p><strong>Tech:</strong> ${project.technologies}</p>
+                <a href="${project.link}" target="_blank">View Project</a>
+            `;
+            
+            projectsContainer.appendChild(projectCard);
+        });
+    })
+    .catch(error => console.error('Error loading JSON:', error));
